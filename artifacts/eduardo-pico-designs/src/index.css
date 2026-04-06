@@ -322,3 +322,7 @@
     inset: -1px;
   }
 }
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
