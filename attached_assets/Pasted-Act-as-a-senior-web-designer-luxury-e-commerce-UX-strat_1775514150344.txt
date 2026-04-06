@@ -1,0 +1,172 @@
+Act as a senior web designer, luxury e-commerce UX strategist, and front-end developer. Build a high-end, modern, conversion-focused website for a brand called “Eduardo Pico Designs.”
+
+Brand Overview:
+Eduardo Pico Designs sells custom crafted decor and personalized products, including:
+- Door Hangers
+- Tumblers
+- Trays
+- Boards
+- Business Branded products
+- Custom Awards
+
+The brand should feel:
+- Elegant
+- Creative
+- Warm
+- Handmade but premium
+- Trustworthy for both personal and business customers
+
+Main Goal:
+Create a visually stunning, polished e-commerce website that feels premium and boutique-level, while still being easy to shop. The site should encourage product browsing, trust, and inquiries for custom work.
+
+Design Direction:
+- Clean, luxury-modern layout
+- Soft neutral background tones with tasteful accent colors
+- Minimal but artistic styling
+- Premium typography with a mix of elegant serif + clean sans-serif
+- Smooth animations and subtle hover effects
+- High-end product showcase feel
+- Spacious layout with strong visual hierarchy
+- Mobile-first and fully responsive
+
+Website Structure:
+1. Hero Section
+- Large premium hero banner
+- Brand name: Eduardo Pico Designs
+- Tagline options like:
+  “Crafted Decor. Personalized Impact.”
+  or
+  “Custom Pieces Designed to Stand Out.”
+- CTA buttons:
+  - Shop All
+  - Explore Collections
+  - Request Custom Work
+
+2. Intro / Welcome Section
+- Include messaging inspired by:
+  “Welcome to our store”
+  “Grow your business with us”
+  “Outstanding service | Exclusive pricing | Industry expertise”
+- Refine this into polished professional copy
+- Make the section feel warm, inviting, and premium
+
+3. Featured Collections Section
+Create beautiful collection cards for:
+- Business Branded
+- Door Hangers
+- Custom Awards
+- Tumblers
+- Trays & Boards
+- Shop All
+
+Each collection card should have:
+- Elegant product imagery placeholders
+- Hover animation
+- Shop now button
+- Short premium description
+
+4. About the Brand Section
+Tell the story of Eduardo Pico Designs as a creative custom decor brand that helps customers celebrate, brand, gift, and decorate with meaningful custom-made pieces.
+Make the writing feel authentic, boutique, and premium.
+
+5. Business / Custom Work Section
+Highlight that Eduardo Pico Designs also helps businesses with branded products and custom orders.
+Include benefits such as:
+- Custom branding
+- Bulk ordering
+- Unique handcrafted presentation
+- Personalized service
+- Quality materials and detail-focused craftsmanship
+
+Add CTA:
+- Start a Custom Order
+- Contact Us
+
+6. Nonprofit / Giving Back Section
+Create a meaningful “Giving Back” section showing support for nonprofit organizations.
+
+Feature these two nonprofits:
+- Frontline Heroes Outdoors
+  https://www.frontlineheroesoutdoors.org/
+- Hometown Hero Outdoors
+  https://hometownherooutdoors.org/
+
+This section should communicate that the business supports causes that help heroes through healing outdoor experiences.
+Add elegant cards with short descriptions and “Learn More” buttons linking to each organization.
+
+7. Contact / Collaboration Section
+Include a section for:
+“If you wish to work with us, please contact us.”
+Make it polished and inviting.
+Include:
+- contact form
+- email placeholder
+- social links
+- CTA button: Let’s Work Together
+
+8. Footer
+Include refined footer navigation with:
+- Search
+- About Us
+- Contact
+- Terms of Service
+- Refund Policy
+- Privacy Policy
+- Contact Information
+- Shop All Products
+
+Also include:
+- social media icons
+- payment method icons
+- copyright:
+  © 2026, Eduardo Pico Designs
+
+Functional Requirements:
+- Clean responsive navigation bar
+- Cart icon
+- Login/account option
+- Announcement bar at top
+- Featured products / best sellers section
+- Testimonial or trust-building section
+- Beautiful product grid layout
+- Strong CTA sections throughout
+- Easy-to-update structure for Shopify integration
+- SEO-friendly layout and headings
+
+Homepage Copy Tone:
+- Refined
+- Welcoming
+- Premium
+- Slightly emotional
+- Professional enough for business buyers
+- Warm enough for personal/custom gift shoppers
+
+Extra Styling Requests:
+- Use luxurious spacing and modern section transitions
+- Add subtle fade-in animations on scroll
+- Use premium button styles
+- Include rounded cards or soft-edged sections
+- Maintain a handmade artisan feel with elevated modern presentation
+- Avoid generic template appearance
+- Make it feel like a real premium custom decor brand
+
+Optional Enhancements:
+- Instagram-style gallery section
+- Customer reviews
+- “How It Works” section for custom orders
+- FAQ section
+- Featured seasonal collection banner
+
+Important:
+Do not make the site feel cheap, cluttered, or overly colorful.
+Avoid looking like a generic Shopify template.
+The final result should look like a premium custom decor brand with luxury boutique energy and strong conversion design.
+
+Output Needed:
+- Full homepage layout
+- Section-by-section content
+- Premium UI/UX structure
+- Suggested color palette
+- Font pairing
+- CTA copy
+- Shopify-ready website structure

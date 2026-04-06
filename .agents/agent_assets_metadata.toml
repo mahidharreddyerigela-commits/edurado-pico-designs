@@ -1,0 +1,50 @@
+uploads = []
+outputs = []
+
+[[generated]]
+id = "X8pMH7LQK1bhd9Fpjg4hj"
+uri = "file://artifacts/eduardo-pico-designs/public/images/hero-bg.png"
+type = "image"
+title = "Artisan workshop hero background"
+
+[[generated]]
+id = "ai5B8tJZk4jawxev47Reu"
+uri = "file://artifacts/eduardo-pico-designs/public/images/door-hangers.png"
+type = "image"
+title = "Door hangers collection"
+
+[[generated]]
+id = "j4qi6nRE5wuKjzZFY5ktg"
+uri = "file://artifacts/eduardo-pico-designs/public/images/tumblers.png"
+type = "image"
+title = "Tumblers collection"
+
+[[generated]]
+id = "4sPjhbP7UixXwoSi8SLWg"
+uri = "file://artifacts/eduardo-pico-designs/public/images/trays-boards.png"
+type = "image"
+title = "Trays and boards collection"
+
+[[generated]]
+id = "r-d-dtO9_ZhbUD6ooGrby"
+uri = "file://artifacts/eduardo-pico-designs/public/images/awards.png"
+type = "image"
+title = "Custom awards collection"
+
+[[generated]]
+id = "ZOmy_c8vcn1Q07BlUN6aA"
+uri = "file://artifacts/eduardo-pico-designs/public/images/business.png"
+type = "image"
+title = "Business branded collection"
+
+[[generated]]
+id = "i_l7WgKM7ArZ9FvVFPOq3"
+uri = "file://artifacts/eduardo-pico-designs/public/images/about-workshop.png"
+type = "image"
+title = "About section workshop"
+
+[[generated]]
+id = "ib5f0xgmJUd_WpgF5FNDB"
+uri = "file://artifacts/eduardo-pico-designs/public/images/custom-work.png"
+type = "image"
+title = "Custom work presentation"
