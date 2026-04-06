@@ -37,8 +37,8 @@ export function Navbar() {
             <img
               src="/images/logo.png"
               alt="Eduardo Pico Designs"
-              className="h-16 md:h-20 w-auto object-contain"
-              style={{ maxWidth: "260px" }}
+              className="h-10 md:h-12 w-auto object-contain"
+              style={{ maxWidth: "160px" }}
             />
           </div>
         </Link>
