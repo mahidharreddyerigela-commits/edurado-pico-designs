@@ -30,13 +30,17 @@ export function Navbar() {
         </nav>
 
         {/* Logo */}
-        <Link href="/" className="absolute left-1/2 -translate-x-1/2 text-center" data-testid="nav-logo">
-          <span className="font-serif text-2xl md:text-3xl font-medium tracking-tight text-foreground">
-            Eduardo Pico
-          </span>
-          <span className="block text-[10px] uppercase tracking-[0.3em] text-muted-foreground mt-1">
-            Designs
-          </span>
+        <Link href="/" className="absolute left-1/2 -translate-x-1/2" data-testid="nav-logo">
+          <div className={`transition-all duration-500 rounded px-2 py-1 ${
+            isScrolled ? "bg-transparent" : "bg-white/10 backdrop-blur-sm"
+          }`}>
+            <img
+              src="/images/logo.png"
+              alt="Eduardo Pico Designs"
+              className="h-10 md:h-12 w-auto object-contain"
+              style={{ maxWidth: "180px" }}
+            />
+          </div>
         </Link>
 
         {/* Desktop Nav Right */}
