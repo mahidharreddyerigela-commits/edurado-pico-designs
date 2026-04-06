@@ -10,6 +10,7 @@ import { HowItWorks } from "@/components/HowItWorks";
 import { Business } from "@/components/Business";
 import { Testimonials } from "@/components/Testimonials";
 import { GivingBack } from "@/components/GivingBack";
+import { MessageCTA } from "@/components/MessageCTA";
 import { Contact } from "@/components/Contact";
 import { Footer } from "@/components/Footer";
 
@@ -27,6 +28,7 @@ function HomePage() {
       <Business />
       <Testimonials />
       <GivingBack />
+      <MessageCTA />
       <Contact />
       <Footer />
     </main>
