@@ -1,40 +1,40 @@
-import { useRef, useState, useCallback } from "react";
+import useEmblaCarousel from "embla-carousel-react";
+import { useCallback, useEffect, useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const slides = [
-  { src: "/images/gallery-1.jpg",    alt: "Hocus Pocus door hanger" },
-  { src: "/images/gallery-5.jpg",    alt: "Jack Skellington door hanger" },
-  { src: "/images/gallery-7.jpg",    alt: "Welcome monogram door hanger" },
-  { src: "/images/gallery-6.jpg",    alt: "Sunflower family door hanger" },
-  { src: "/images/door-hangers.jpg", alt: "Sally door hanger" },
-  { src: "/images/gallery-2.jpg",    alt: "Texas flag cornhole boards" },
-  { src: "/images/gallery-3.jpg",    alt: "Fish and deer cornhole boards" },
-  { src: "/images/gallery-4.jpg",    alt: "Come and Take It cornhole boards" },
+  { src: "/images/gallery-1.jpg", alt: "Hocus Pocus door hanger" },
+  { src: "/images/gallery-5.jpg", alt: "Jack Skellington door hanger" },
+  { src: "/images/gallery-7.jpg", alt: "Welcome monogram door hanger" },
+  { src: "/images/gallery-6.jpg", alt: "Sunflower family door hanger" },
+  { src: "/images/gallery-2.jpg", alt: "Texas flag cornhole boards" },
+  { src: "/images/gallery-3.jpg", alt: "Fish and deer cornhole boards" },
+  { src: "/images/gallery-4.jpg", alt: "Come and Take It cornhole boards" },
 ];
 
 export function Gallery() {
-  const trackRef = useRef<HTMLDivElement>(null);
-  const [active, setActive] = useState(0);
+  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true, align: "center" });
+  const [selectedIndex, setSelectedIndex] = useState(0);
 
-  const scrollTo = useCallback((index: number) => {
-    const track = trackRef.current;
-    if (!track) return;
-    const slide = track.children[index] as HTMLElement;
-    if (!slide) return;
-    track.scrollTo({ left: slide.offsetLeft, behavior: "smooth" });
-    setActive(index);
-  }, []);
+  const scrollPrev = useCallback(() => emblaApi?.scrollPrev(), [emblaApi]);
+  const scrollNext = useCallback(() => emblaApi?.scrollNext(), [emblaApi]);
+  const scrollTo  = useCallback((i: number) => emblaApi?.scrollTo(i), [emblaApi]);
 
-  const prev = useCallback(() => scrollTo(Math.max(0, active - 1)), [active, scrollTo]);
-  const next = useCallback(() => scrollTo(Math.min(slides.length - 1, active + 1)), [active, scrollTo]);
+  const onSelect = useCallback(() => {
+    if (!emblaApi) return;
+    setSelectedIndex(emblaApi.selectedScrollSnap());
+  }, [emblaApi]);
 
-  const onScroll = useCallback(() => {
-    const track = trackRef.current;
-    if (!track) return;
-    const slideWidth = (track.children[0] as HTMLElement)?.offsetWidth ?? 1;
-    const index = Math.round(track.scrollLeft / slideWidth);
-    setActive(index);
-  }, []);
+  useEffect(() => {
+    if (!emblaApi) return;
+    onSelect();
+    emblaApi.on("select", onSelect);
+    emblaApi.on("reInit", onSelect);
+    return () => {
+      emblaApi.off("select", onSelect);
+      emblaApi.off("reInit", onSelect);
+    };
+  }, [emblaApi, onSelect]);
 
   return (
     <section className="py-20 bg-[hsl(var(--background))]">
@@ -47,44 +47,39 @@ export function Gallery() {
 
       {/* Carousel */}
       <div className="relative group">
-        {/* Track */}
-        <div
-          ref={trackRef}
-          onScroll={onScroll}
-          className="flex overflow-x-auto scrollbar-hide snap-x snap-mandatory"
-          style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
-        >
-          {slides.map((slide, i) => (
-            <div
-              key={i}
-              className="flex-shrink-0 w-full md:w-[75%] lg:w-[60%] snap-center px-2 md:px-3"
-            >
-              <div className="h-[340px] md:h-[500px] overflow-hidden rounded-2xl relative">
-                <img
-                  src={slide.src}
-                  alt={slide.alt}
-                  className="w-full h-full object-cover object-center transition-transform duration-700 hover:scale-105"
-                />
-                {/* Dim non-active slides */}
-                <div
-                  className="absolute inset-0 bg-black transition-opacity duration-400 rounded-2xl"
-                  style={{ opacity: active === i ? 0 : 0.4 }}
-                />
+        {/* Embla viewport */}
+        <div className="overflow-hidden" ref={emblaRef}>
+          <div className="flex">
+            {slides.map((slide, i) => (
+              <div
+                key={i}
+                className="relative flex-[0_0_100%] h-[360px] md:h-[520px] px-2 md:px-4"
+              >
+                <div className="w-full h-full overflow-hidden rounded-2xl relative">
+                  <img
+                    src={slide.src}
+                    alt={slide.alt}
+                    className="w-full h-full object-cover object-center transition-transform duration-700"
+                  />
+                  {/* Dim non-active slides */}
+                  <div
+                    className="absolute inset-0 bg-black transition-opacity duration-300 pointer-events-none"
+                    style={{ opacity: selectedIndex === i ? 0 : 0.38 }}
+                  />
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
 
         {/* Prev arrow */}
         <button
-          onClick={prev}
-          disabled={active === 0}
+          onClick={scrollPrev}
           aria-label="Previous photo"
-          className="absolute left-3 md:left-6 top-1/2 -translate-y-1/2 z-10
+          className="absolute left-4 md:left-8 top-1/2 -translate-y-1/2 z-10
                      w-11 h-11 rounded-full flex items-center justify-center
                      bg-black/40 backdrop-blur-sm border border-white/10 text-white
                      hover:bg-[hsl(var(--primary))] hover:border-transparent
-                     disabled:opacity-30 disabled:cursor-not-allowed
                      opacity-0 group-hover:opacity-100 transition-all duration-300"
         >
           <ChevronLeft className="w-5 h-5" />
@@ -92,14 +87,12 @@ export function Gallery() {
 
         {/* Next arrow */}
         <button
-          onClick={next}
-          disabled={active === slides.length - 1}
+          onClick={scrollNext}
           aria-label="Next photo"
-          className="absolute right-3 md:right-6 top-1/2 -translate-y-1/2 z-10
+          className="absolute right-4 md:right-8 top-1/2 -translate-y-1/2 z-10
                      w-11 h-11 rounded-full flex items-center justify-center
                      bg-black/40 backdrop-blur-sm border border-white/10 text-white
                      hover:bg-[hsl(var(--primary))] hover:border-transparent
-                     disabled:opacity-30 disabled:cursor-not-allowed
                      opacity-0 group-hover:opacity-100 transition-all duration-300"
         >
           <ChevronRight className="w-5 h-5" />
@@ -114,7 +107,7 @@ export function Gallery() {
             onClick={() => scrollTo(i)}
             aria-label={`Go to slide ${i + 1}`}
             className={`rounded-full transition-all duration-300 ${
-              active === i
+              selectedIndex === i
                 ? "w-6 h-2 bg-[hsl(var(--primary))]"
                 : "w-2 h-2 bg-[hsl(var(--primary)/0.3)] hover:bg-[hsl(var(--primary)/0.6)]"
             }`}
