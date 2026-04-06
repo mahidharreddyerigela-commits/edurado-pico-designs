@@ -6,7 +6,6 @@ import { Navbar } from "@/components/Navbar";
 import { Hero } from "@/components/Hero";
 import { Collections } from "@/components/Collections";
 import { Gallery } from "@/components/Gallery";
-import { About } from "@/components/About";
 import { HowItWorks } from "@/components/HowItWorks";
 import { Business } from "@/components/Business";
 import { Testimonials } from "@/components/Testimonials";
@@ -24,7 +23,6 @@ function HomePage() {
       <Hero />
       <Collections />
       <Gallery />
-      <About />
       <HowItWorks />
       <Business />
       <Testimonials />
