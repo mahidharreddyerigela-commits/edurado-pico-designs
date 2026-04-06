@@ -55,11 +55,11 @@ export function Gallery() {
                 key={i}
                 className="relative flex-[0_0_100%] h-[360px] md:h-[520px] px-2 md:px-4"
               >
-                <div className="w-full h-full overflow-hidden rounded-2xl relative">
+                <div className="w-full h-full overflow-hidden rounded-2xl relative bg-[hsl(var(--secondary))]">
                   <img
                     src={slide.src}
                     alt={slide.alt}
-                    className="w-full h-full object-cover object-center transition-transform duration-700"
+                    className="w-full h-full object-contain transition-transform duration-700"
                   />
                   {/* Dim non-active slides */}
                   <div
