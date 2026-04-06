@@ -31,16 +31,15 @@ export function Navbar() {
 
         {/* Logo */}
         <Link href="/" className="absolute left-1/2 -translate-x-1/2" data-testid="nav-logo">
-          <div className={`transition-all duration-500 rounded px-2 py-1 ${
-            isScrolled ? "bg-transparent" : "bg-white/10 backdrop-blur-sm"
-          }`}>
-            <img
-              src="/images/logo.png"
-              alt="Eduardo Pico Designs"
-              className="h-10 md:h-12 w-auto object-contain"
-              style={{ maxWidth: "160px" }}
-            />
-          </div>
+          <img
+            src="/images/logo-transparent.png"
+            alt="Eduardo Pico Designs"
+            className="h-10 md:h-12 w-auto object-contain transition-all duration-500"
+            style={{
+              maxWidth: "160px",
+              filter: isScrolled ? "none" : "brightness(0) invert(1) drop-shadow(0 1px 4px rgba(0,0,0,0.4))"
+            }}
+          />
         </Link>
 
         {/* Desktop Nav Right */}
