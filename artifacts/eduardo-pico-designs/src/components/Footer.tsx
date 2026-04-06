@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Instagram, Facebook } from "lucide-react";
-import { SiPinterest, SiVisa, SiMastercard, SiPaypal, SiAmericanexpress, SiApplepay } from "react-icons/si";
+import { SiTiktok, SiVisa, SiMastercard, SiPaypal, SiAmericanexpress, SiApplepay } from "react-icons/si";
 
 const footerLinks = {
   shop: [
@@ -47,14 +47,14 @@ export function Footer() {
               Custom crafted decor and personalized pieces made with heart. Serving personal and business clients with unmatched quality and care.
             </p>
             <div className="flex items-center gap-5">
-              <a href="#" aria-label="Instagram" className="text-background/50 hover:text-primary transition-colors" data-testid="footer-social-instagram">
+              <a href="https://www.instagram.com/eduardopicodesigns/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="text-background/50 hover:text-primary transition-colors" data-testid="footer-social-instagram">
                 <Instagram className="w-4 h-4" strokeWidth={1.5} />
               </a>
-              <a href="#" aria-label="Facebook" className="text-background/50 hover:text-primary transition-colors" data-testid="footer-social-facebook">
+              <a href="https://www.facebook.com/EduardoPicoDesigns/" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="text-background/50 hover:text-primary transition-colors" data-testid="footer-social-facebook">
                 <Facebook className="w-4 h-4" strokeWidth={1.5} />
               </a>
-              <a href="#" aria-label="Pinterest" className="text-background/50 hover:text-primary transition-colors" data-testid="footer-social-pinterest">
-                <SiPinterest className="w-4 h-4" />
+              <a href="https://www.tiktok.com/@eduardo.pico.designs" target="_blank" rel="noopener noreferrer" aria-label="TikTok" className="text-background/50 hover:text-primary transition-colors" data-testid="footer-social-tiktok">
+                <SiTiktok className="w-4 h-4" />
               </a>
             </div>
           </motion.div>

@@ -7,7 +7,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
 import { Instagram, Facebook } from "lucide-react";
-import { SiPinterest } from "react-icons/si";
+import { SiTiktok } from "react-icons/si";
 
 const contactSchema = z.object({
   name: z.string().min(2, "Name must be at least 2 characters"),
@@ -81,14 +81,14 @@ export function Contact() {
             <div>
               <span className="text-xs uppercase tracking-widest text-muted-foreground block mb-4">Follow the Studio</span>
               <div className="flex items-center gap-5">
-                <a href="#" aria-label="Instagram" className="text-foreground hover:text-primary transition-colors" data-testid="social-instagram">
+                <a href="https://www.instagram.com/eduardopicodesigns/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="text-foreground hover:text-primary transition-colors" data-testid="social-instagram">
                   <Instagram className="w-5 h-5" strokeWidth={1.5} />
                 </a>
-                <a href="#" aria-label="Facebook" className="text-foreground hover:text-primary transition-colors" data-testid="social-facebook">
+                <a href="https://www.facebook.com/EduardoPicoDesigns/" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="text-foreground hover:text-primary transition-colors" data-testid="social-facebook">
                   <Facebook className="w-5 h-5" strokeWidth={1.5} />
                 </a>
-                <a href="#" aria-label="Pinterest" className="text-foreground hover:text-primary transition-colors" data-testid="social-pinterest">
-                  <SiPinterest className="w-5 h-5" />
+                <a href="https://www.tiktok.com/@eduardo.pico.designs" target="_blank" rel="noopener noreferrer" aria-label="TikTok" className="text-foreground hover:text-primary transition-colors" data-testid="social-tiktok">
+                  <SiTiktok className="w-5 h-5" />
                 </a>
               </div>
             </div>
