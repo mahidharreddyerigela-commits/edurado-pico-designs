@@ -5,7 +5,7 @@ const collections = [
   {
     title: "Door Hangers",
     description: "Welcome guests with elegant, custom-crafted greetings.",
-    image: "/images/door-hangers.png",
+    image: "/images/door-hangers.jpg",
     link: "#door-hangers"
   },
   {
