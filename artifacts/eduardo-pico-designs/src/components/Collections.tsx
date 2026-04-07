@@ -35,7 +35,7 @@ const collections = [
   {
     title: "Shop All",
     description: "Explore the complete Eduardo Pico Designs catalog.",
-    image: "/images/custom-work.png",
+    image: "/images/shop-all.png",
     link: "https://eduardopicodesigns.com/collections/all"
   }
 ];
