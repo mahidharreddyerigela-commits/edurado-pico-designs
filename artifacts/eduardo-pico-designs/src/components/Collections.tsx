@@ -109,7 +109,7 @@ export function Collections() {
           viewport={{ once: true }}
           transition={{ duration: 0.8, delay: 0.4 }}
         >
-          <a href="#shop-all" className="inline-flex items-center justify-center border border-foreground/20 hover:border-primary hover:text-primary px-10 py-4 uppercase tracking-widest text-sm font-medium transition-all duration-300" data-testid="btn-shop-all">
+          <a href="https://eduardopicodesigns.com/collections/all" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center border border-foreground/20 hover:border-primary hover:text-primary px-10 py-4 uppercase tracking-widest text-sm font-medium transition-all duration-300" data-testid="btn-shop-all">
             View Complete Catalog
           </a>
         </motion.div>
