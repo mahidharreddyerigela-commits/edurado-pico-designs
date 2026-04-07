@@ -30,7 +30,7 @@ export function Hero() {
             <span className="italic text-primary/90">Personalized Impact.</span>
           </h1>
           <p className="text-lg md:text-xl text-white/90 font-light max-w-2xl mx-auto mb-10 drop-shadow-md">
-            Step into an intimate artisan studio where every piece has soul. Discover warm tones, fine materials, and craftsmanship you can feel.
+            A husband-and-wife studio turning meaningful ideas into one-of-a-kind pieces through the art of laser engraving. Every piece is a story.
           </p>
           
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">

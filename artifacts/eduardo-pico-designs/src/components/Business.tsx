@@ -36,7 +36,7 @@ export function Business() {
               Elevate Your <br /><i className="font-light text-primary/80">Brand Identity.</i>
             </h2>
             <p className="text-background/70 font-light text-lg leading-relaxed mb-12 max-w-lg">
-              Eduardo Pico Designs partners with businesses to create branded merchandise and custom awards that leave a lasting impression. We blend your brand's identity with our artisan sensibility — the result is something people actually keep.
+              What started as a shared family hobby grew into a full-time passion. Today, Eduardo Pico Designs partners with businesses to create branded merchandise and custom awards that leave a lasting impression — handcrafted with intention and integrity.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">

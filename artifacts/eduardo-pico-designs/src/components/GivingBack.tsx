@@ -40,10 +40,10 @@ export function GivingBack() {
             <Heart className="w-4 h-4 text-primary" strokeWidth={1.5} />
           </div>
           <h2 className="text-4xl md:text-5xl font-serif text-foreground mb-6 leading-tight">
-            Supporting Those Who <i className="text-primary font-light">Serve.</i>
+            Rooted in <i className="text-primary font-light">Community.</i>
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto font-light text-lg leading-relaxed">
-            At Eduardo Pico Designs, we believe business is a vehicle for good. We are proud to support organizations that help our heroes find restoration and renewal through the healing power of the outdoors.
+            Built by family, driven by purpose. Eduardo Pico Designs gives back to local organizations and causes that matter — because craftsmanship with character goes beyond the product.
           </p>
         </motion.div>
 
@@ -92,7 +92,7 @@ export function GivingBack() {
           viewport={{ once: true }}
           transition={{ duration: 0.8, delay: 0.4 }}
         >
-          A portion of our proceeds supports these extraordinary organizations. When you shop with us, you invest in more than a beautiful product — you invest in lives.
+          A portion of our proceeds supports these organizations. When you shop with us, you invest in more than a beautiful product — you invest in the community we love.
         </motion.p>
       </div>
     </section>
