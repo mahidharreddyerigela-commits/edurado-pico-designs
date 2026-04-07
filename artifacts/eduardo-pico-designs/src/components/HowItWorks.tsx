@@ -86,7 +86,9 @@ export function HowItWorks() {
           transition={{ duration: 0.6, delay: 0.3 }}
         >
           <a
-            href="#contact"
+            href="https://eduardopicodesigns.com/pages/contact"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center justify-center bg-primary text-foreground px-10 py-4 uppercase tracking-widest text-sm font-semibold hover:bg-primary/90 transition-colors duration-300"
             data-testid="btn-start-order-how-it-works"
           >

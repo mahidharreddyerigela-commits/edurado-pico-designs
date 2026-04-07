@@ -41,7 +41,9 @@ export function Business() {
 
             <div className="flex flex-col sm:flex-row gap-4">
               <a 
-                href="#contact"
+                href="https://eduardopicodesigns.com/pages/contact"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center justify-center bg-primary text-foreground px-8 py-4 uppercase tracking-widest text-sm font-semibold hover:bg-primary/90 transition-colors duration-300"
                 data-testid="btn-start-custom-order"
               >
