@@ -9,26 +9,26 @@ const collections = [
     link: "https://eduardopicodesigns.com/collections/seasonal-holiday-door-hangers"
   },
   {
-    title: "Tumblers",
-    description: "Premium engraved drinkware for daily luxury.",
+    title: "Custom Tumblers",
+    description: "Perfect for events, gifts, and business branding.",
     image: "/images/tumblers.png",
     link: "https://eduardopicodesigns.com/collections/all"
   },
   {
-    title: "Trays & Boards",
-    description: "Artisan charcuterie boards and serving trays.",
+    title: "Charcuterie Boards & Custom Gifts",
+    description: "Great for realtor closings, gifts, and home decor.",
     image: "/images/trays-boards.png",
     link: "https://eduardopicodesigns.com/collections/all"
   },
   {
     title: "Custom Awards",
-    description: "Sophisticated recognition for outstanding achievement.",
+    description: "Built for car shows, tournaments, and recognition events.",
     image: "/images/awards.png",
     link: "https://eduardopicodesigns.com/collections/custom-builds-one-of-a-kind-orders"
   },
   {
-    title: "Business Branded",
-    description: "Meaningful corporate gifts that leave an impression.",
+    title: "Business Branding",
+    description: "Custom products with your logo for clients, teams, and promotions.",
     image: "/images/business.png",
     link: "https://eduardopicodesigns.com/collections/business-branded-products"
   },
