@@ -12,13 +12,13 @@ const collections = [
     title: "Tumblers",
     description: "Premium engraved drinkware for daily luxury.",
     image: "/images/tumblers.png",
-    link: "#tumblers"
+    link: "https://eduardopicodesigns.com/collections/all"
   },
   {
     title: "Trays & Boards",
     description: "Artisan charcuterie boards and serving trays.",
     image: "/images/trays-boards.png",
-    link: "#trays"
+    link: "https://eduardopicodesigns.com/collections/all"
   },
   {
     title: "Custom Awards",
@@ -36,7 +36,7 @@ const collections = [
     title: "Shop All",
     description: "Explore the complete Eduardo Pico Designs catalog.",
     image: "/images/custom-work.png",
-    link: "#shop-all"
+    link: "https://eduardopicodesigns.com/collections/all"
   }
 ];
 
