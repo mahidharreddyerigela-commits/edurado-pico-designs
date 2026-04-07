@@ -6,36 +6,42 @@ const collections = [
     title: "Door Hangers",
     description: "Welcome guests with elegant, custom-crafted greetings.",
     image: "/images/door-hangers.jpg",
+    alt: "Custom laser-engraved door hangers handcrafted in San Antonio TX — Eduardo Pico Designs",
     link: "https://eduardopicodesigns.com/collections/seasonal-holiday-door-hangers"
   },
   {
     title: "Custom Tumblers",
     description: "Perfect for events, gifts, and business branding.",
     image: "/images/tumblers.png",
+    alt: "Custom laser-engraved tumblers for events, gifts, and business branding — San Antonio TX",
     link: "https://eduardopicodesigns.com/collections/all"
   },
   {
     title: "Charcuterie Boards & Custom Gifts",
     description: "Great for realtor closings, gifts, and home decor.",
     image: "/images/trays-boards.png",
+    alt: "Custom engraved charcuterie boards and personalized gifts for realtor closings San Antonio TX",
     link: "https://eduardopicodesigns.com/collections/all"
   },
   {
     title: "Custom Awards",
     description: "Built for car shows, tournaments, and recognition events.",
     image: "/images/awards.png",
+    alt: "Custom awards and trophies for car shows, tournaments, and recognition events — San Antonio TX",
     link: "https://eduardopicodesigns.com/collections/custom-builds-one-of-a-kind-orders"
   },
   {
     title: "Business Branding",
     description: "Custom products with your logo for clients, teams, and promotions.",
     image: "/images/business.png",
+    alt: "Custom business branded products with company logo for clients, teams, and promotions San Antonio",
     link: "https://eduardopicodesigns.com/collections/business-branded-products"
   },
   {
     title: "Shop All",
     description: "Explore the complete Eduardo Pico Designs catalog.",
     image: "/images/shop-all.png",
+    alt: "Shop all custom laser engraving and handcrafted products — Eduardo Pico Designs San Antonio TX",
     link: "https://eduardopicodesigns.com/collections/all"
   }
 ];
@@ -51,7 +57,7 @@ export function Collections() {
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.8 }}
         >
-          <h2 className="text-3xl md:text-5xl font-serif text-foreground mb-4">Curated Collections</h2>
+          <h2 className="text-3xl md:text-5xl font-serif text-foreground mb-4">Custom Awards, Gifts &amp; Engraving</h2>
           <div className="w-12 h-[1px] bg-primary mx-auto mb-6"></div>
           <p className="text-muted-foreground max-w-2xl mx-auto font-light text-lg">
             Meaningful pieces crafted for every occasion. Discover our signature offerings, handmade with uncompromising quality.
@@ -75,7 +81,8 @@ export function Collections() {
               <div className="aspect-[3/4] overflow-hidden relative">
                 <img 
                   src={item.image} 
-                  alt={item.title} 
+                  alt={item.alt}
+                  loading="lazy"
                   className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-black/10 group-hover:bg-black/0 transition-colors duration-500" />

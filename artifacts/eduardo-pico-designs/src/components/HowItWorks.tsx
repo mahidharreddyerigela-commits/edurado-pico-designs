@@ -42,7 +42,7 @@ export function HowItWorks() {
             The Process
           </span>
           <h2 className="text-4xl md:text-5xl font-serif text-foreground leading-tight">
-            How Custom Orders <i className="font-light text-primary">Work.</i>
+            How Custom Laser Engraving <i className="font-light text-primary">Works.</i>
           </h2>
         </motion.div>
 

@@ -3,13 +3,13 @@ import { useCallback, useEffect, useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const slides = [
-  { src: "/images/gallery-1.jpg", alt: "Hocus Pocus door hanger" },
-  { src: "/images/gallery-5.jpg", alt: "Jack Skellington door hanger" },
-  { src: "/images/gallery-7.jpg", alt: "Welcome monogram door hanger" },
-  { src: "/images/gallery-6.jpg", alt: "Sunflower family door hanger" },
-  { src: "/images/gallery-2.jpg", alt: "Texas flag cornhole boards" },
-  { src: "/images/gallery-3.jpg", alt: "Fish and deer cornhole boards" },
-  { src: "/images/gallery-4.jpg", alt: "Come and Take It cornhole boards" },
+  { src: "/images/gallery-1.jpg", alt: "Custom laser-engraved Hocus Pocus door hanger — San Antonio TX" },
+  { src: "/images/gallery-5.jpg", alt: "Custom Jack Skellington door hanger handcrafted in San Antonio TX" },
+  { src: "/images/gallery-7.jpg", alt: "Personalized welcome monogram door hanger — Eduardo Pico Designs" },
+  { src: "/images/gallery-6.jpg", alt: "Custom sunflower family door hanger laser engraved San Antonio" },
+  { src: "/images/gallery-2.jpg", alt: "Custom Texas flag laser-engraved cornhole boards San Antonio TX" },
+  { src: "/images/gallery-3.jpg", alt: "Custom fish and deer laser-engraved cornhole boards" },
+  { src: "/images/gallery-4.jpg", alt: "Come and Take It custom laser-engraved cornhole boards Texas" },
 ];
 
 export function Gallery() {
@@ -59,6 +59,7 @@ export function Gallery() {
                   <img
                     src={slide.src}
                     alt={slide.alt}
+                    loading="lazy"
                     className="w-full h-full object-contain transition-transform duration-700"
                   />
                   {/* Dim non-active slides */}

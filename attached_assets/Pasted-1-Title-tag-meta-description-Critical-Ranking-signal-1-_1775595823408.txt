@@ -1,0 +1,61 @@
+1. Title tag & meta description
+Critical
+Ranking signal #1
+Current state
+Site likely uses a generic or missing title tag. Netlify default URLs have zero domain authority for local searches.
+Required fix
+Set: <title>Custom Awards, Signs & Engraving San Antonio TX | Eduardo Pico Designs</title>
+Meta: "Handcrafted custom awards, laser engraving, signs & gifts in San Antonio, TX. Fast turnaround. Shop online or request a quote today."
+2. Custom domain + SSL
+Critical
+Domain authority blocker
+Problem
+eduradopicodesigns.netlify.app — Google gives subdomain sites near-zero domain authority. You're borrowing Netlify's domain, not building your own.
+Fix
+Register eduardopicodesigns.com (~$12/yr). Point to Netlify. Enable HTTPS. Add canonical tags. This is the single highest-leverage SEO action available.
+3. Structured data (Schema.org)
+Critical
+Rich snippets in search
+Add JSON-LD to every page
+Types needed: LocalBusiness, Product, Review, BreadcrumbList. Include: business name, address, phone, geo coords, openingHours, priceRange, image, sameAs (social links). This unlocks star ratings, business panels, and product carousels in Google.
+4. Google Business Profile
+Critical
+Local map pack = 44% of clicks
+Action required
+Claim/create Google Business Profile. Category: "Trophy shop" + "Sign shop" + "Engraving service". Add 20+ photos, business hours, service areas, products with prices, and Q&A. Link to your custom domain. This is the fastest path to top-3 local map pack placement in San Antonio.
+5. H1–H3 heading hierarchy
+High impact
+Keyword relevance signal
+Required structure
+H1 (one per page): "Custom Awards & Laser Engraving in San Antonio, TX"
+H2s: "Custom Trophies & Awards", "Laser Engraved Signs", "Personalized Gifts", "Business Branding & Recognition"
+H3s: product names with keywords embedded.
+6. Image alt text & file names
+High impact
+Google Image Search traffic
+Fix all images
+Rename files: custom-crystal-award-san-antonio.jpg not IMG_4823.jpg
+Alt text: "Custom laser-engraved crystal award for corporate recognition — San Antonio TX"
+Compress all images to under 150KB using WebP format. Add lazy loading.
+7. Target keyword map
+High impact
+Content strategy
+Primary keywords (high intent)
+"custom awards San Antonio" · "laser engraving San Antonio TX" · "custom signs San Antonio" · "personalized gifts San Antonio" · "trophy shop San Antonio" · "custom engraved plaques Texas"
+Long-tail blog/page targets
+"best custom award shops in San Antonio" · "laser engraved wedding gifts Texas" · "corporate recognition awards San Antonio" · "custom cutting boards engraved TX" · "church awards and plaques San Antonio"
+8. Page speed & Core Web Vitals
+High impact
+Direct ranking factor since 2021
+Likely issues on this site
+Heavy uncompressed product photos · No lazy loading · No image CDN · Missing preconnect headers · No critical CSS inlining. Target: LCP under 2.5s, CLS under 0.1, FID under 100ms. Run Google PageSpeed Insights and fix all red items.
+9. Reviews & social proof signals
+Quick win
+Trust + CTR boost
+Action
+Add Review schema to the testimonials section already on the page. Embed or link Google reviews widget. Create Yelp + BBB listings. 50+ Google reviews with 4.7+ stars can move you into the local map pack within 60 days.
+10. XML sitemap + robots.txt + GA4
+Quick win
+Crawlability & measurement
+Setup checklist
+Generate sitemap.xml → submit to Google Search Console · Add robots.txt allowing all · Install GA4 + Google Tag Manager · Set up Search Console property on custom domain · Enable Google Analytics ecommerce events if orders are placed on-site.
