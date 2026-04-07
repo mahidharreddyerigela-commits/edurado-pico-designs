@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://eduardopicodesigns.com/sitemap.xml
+Sitemap: https://eduardopicodesignsllc.com/sitemap.xml
