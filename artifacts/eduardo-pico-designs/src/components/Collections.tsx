@@ -6,7 +6,7 @@ const collections = [
     title: "Door Hangers",
     description: "Welcome guests with elegant, custom-crafted greetings.",
     image: "/images/door-hangers.jpg",
-    link: "#door-hangers"
+    link: "https://eduardopicodesigns.com/collections/seasonal-holiday-door-hangers"
   },
   {
     title: "Tumblers",
@@ -63,6 +63,8 @@ export function Collections() {
             <motion.a
               href={item.link}
               key={item.title}
+              target={item.link.startsWith("http") ? "_blank" : undefined}
+              rel={item.link.startsWith("http") ? "noopener noreferrer" : undefined}
               className="group block relative overflow-hidden bg-card"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
