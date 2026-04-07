@@ -128,8 +128,11 @@ export function Footer() {
             </ul>
 
             <h4 className="text-background text-xs uppercase tracking-[0.2em] font-semibold mb-4">Contact</h4>
-            <a href="mailto:hello@eduardopico.com" className="text-background/55 hover:text-primary text-sm font-light transition-colors block">
-              hello@eduardopico.com
+            <a href="mailto:eduardopicodesigns@gmail.com" className="text-background/55 hover:text-primary text-sm font-light transition-colors block">
+              eduardopicodesigns@gmail.com
+            </a>
+            <a href="tel:+17262031225" className="text-background/55 hover:text-primary text-sm font-light transition-colors block mt-1">
+              (726) 203-1225
             </a>
           </motion.div>
         </div>

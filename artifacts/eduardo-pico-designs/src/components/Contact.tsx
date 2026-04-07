@@ -67,8 +67,14 @@ export function Contact() {
             <div className="space-y-4 mb-12">
               <div>
                 <span className="text-xs uppercase tracking-widest text-muted-foreground block mb-1">Email</span>
-                <a href="mailto:hello@eduardopico.com" className="text-foreground hover:text-primary transition-colors font-light" data-testid="contact-email">
-                  hello@eduardopico.com
+                <a href="mailto:eduardopicodesigns@gmail.com" className="text-foreground hover:text-primary transition-colors font-light" data-testid="contact-email">
+                  eduardopicodesigns@gmail.com
+                </a>
+              </div>
+              <div>
+                <span className="text-xs uppercase tracking-widest text-muted-foreground block mb-1">Phone</span>
+                <a href="tel:+17262031225" className="text-foreground hover:text-primary transition-colors font-light">
+                  (726) 203-1225
                 </a>
               </div>
               <div>
