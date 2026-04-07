@@ -30,7 +30,7 @@ const collections = [
     title: "Business Branded",
     description: "Meaningful corporate gifts that leave an impression.",
     image: "/images/business.png",
-    link: "#business-branded"
+    link: "https://eduardopicodesigns.com/collections/business-branded-products"
   },
   {
     title: "Shop All",
