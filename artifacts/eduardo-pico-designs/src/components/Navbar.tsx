@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link } from "wouter";
 import { motion, useScroll, useMotionValueEvent } from "framer-motion";
-import { ShoppingCart, User, Menu, X } from "lucide-react";
+import { User, Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export function Navbar() {
@@ -51,20 +51,11 @@ export function Navbar() {
             <button className="hover:text-primary transition-colors" data-testid="nav-account" aria-label="Account">
               <User className="w-5 h-5" strokeWidth={1.5} />
             </button>
-            <button className="hover:text-primary transition-colors relative" data-testid="nav-cart" aria-label="Cart">
-              <ShoppingCart className="w-5 h-5" strokeWidth={1.5} />
-              <span className="absolute -top-1 -right-1.5 bg-primary text-primary-foreground text-[9px] font-bold w-4 h-4 flex items-center justify-center rounded-full">
-                0
-              </span>
-            </button>
           </div>
         </div>
 
         {/* Mobile Menu Toggle */}
         <div className="flex items-center gap-4 md:hidden">
-          <button className="hover:text-primary transition-colors relative" data-testid="nav-cart-mobile">
-            <ShoppingCart className="w-5 h-5" strokeWidth={1.5} />
-          </button>
           <button 
             className="text-foreground" 
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
