@@ -24,7 +24,7 @@ const collections = [
     title: "Custom Awards",
     description: "Sophisticated recognition for outstanding achievement.",
     image: "/images/awards.png",
-    link: "#awards"
+    link: "https://eduardopicodesigns.com/collections/custom-builds-one-of-a-kind-orders"
   },
   {
     title: "Business Branded",
