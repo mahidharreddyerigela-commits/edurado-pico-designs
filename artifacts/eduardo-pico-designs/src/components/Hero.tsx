@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import { Button } from "@/components/ui/button";
 
 export function Hero() {
   return (
@@ -35,21 +34,24 @@ export function Hero() {
           </p>
           
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <Button 
-              size="lg" 
-              className="w-full sm:w-auto bg-primary text-primary-foreground hover:bg-primary/90 rounded-none px-8 py-6 text-sm tracking-wide uppercase transition-all duration-300"
+            <a
+              href="https://eduardopicodesigns.com/collections/all"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full sm:w-auto inline-block bg-primary text-primary-foreground hover:bg-primary/90 rounded-none px-8 py-4 text-sm tracking-wide uppercase transition-all duration-300 text-center"
               data-testid="hero-cta-explore"
             >
               Explore Collections
-            </Button>
-            <Button 
-              size="lg" 
-              variant="outline"
-              className="w-full sm:w-auto bg-transparent border-white/40 text-white hover:bg-white hover:text-black rounded-none px-8 py-6 text-sm tracking-wide uppercase backdrop-blur-sm transition-all duration-300"
+            </a>
+            <a
+              href="https://eduardopicodesigns.com/pages/contact"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full sm:w-auto inline-block bg-transparent border border-white/40 text-white hover:bg-white hover:text-black rounded-none px-8 py-4 text-sm tracking-wide uppercase backdrop-blur-sm transition-all duration-300 text-center"
               data-testid="hero-cta-custom"
             >
               Request Custom Work
-            </Button>
+            </a>
           </div>
         </motion.div>
       </div>
